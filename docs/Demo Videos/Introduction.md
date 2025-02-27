@@ -14,11 +14,7 @@ This video will give you a quick overview of the platform, its features, and how
 
 Watch the Introduction Video
 
-``` markdown 
-
 ![type:video](Introduction.mp4)
 
-
-```
 
 If you have any questions or need more details, feel free to check out the rest of the documentation or reach out to our support team.
