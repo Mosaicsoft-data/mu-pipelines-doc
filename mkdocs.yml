@@ -29,7 +29,6 @@ nav:
       How to create data mesh: Developer Docs\How to create data mesh.md
   - Demo Videos: 
       Introduction: Demo Videos\Introduction.md
-      Basic Setup: Demo Videos\Basic Setup.md
       Use in databricks: Demo Videos\Use in databricks.md
   - FAQ: faq.md
 
