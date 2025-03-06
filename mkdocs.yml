@@ -15,6 +15,7 @@ nav:
       CSV: ingest-command\ingestCSV.md
       Kafka: ingest-command\ingestKafka.md
       Databases (JDBC): ingest-command\ingestJDBC.md
+      Rest API: ingest-command\ingestRestAPI.md
   - Transform Commands: 
       SQL Transformation: transform-command\transformSQL.md
   - Destination Commands: 
@@ -24,6 +25,7 @@ nav:
       Kafka to Iceberg Configuration: streaming-command\stream-kafka-iceberg.md
   - Connection Properties: connection_properties.md
   - Global Properties: global_properties.md
+  - Secrets Properties: secrets_properties.md
   - Developer Docs: 
       CI-CD: Developer Docs\CI-CD.md
       How to create data mesh: Developer Docs\How to create data mesh.md
