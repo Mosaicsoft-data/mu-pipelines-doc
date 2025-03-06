@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#connection-properties-documentation" class="md-skip">
+        <a href="#connection-properties-documentation-coming-soon" class="md-skip">
           Skip to content
         </a>
       
@@ -305,6 +305,28 @@
   
   <span class="md-ellipsis">
     Databases (JDBC)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ingest-command/ingestRestAPI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rest API
     
   </span>
   
@@ -673,6 +695,27 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../secrets_properties/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Secrets Properties
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
     
@@ -681,10 +724,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
         
           
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -696,8 +739,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
             <span class="md-nav__icon md-icon"></span>
             Developer Docs
           </label>
@@ -768,10 +811,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
         
           
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -783,8 +826,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_10">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
             Demo Videos
           </label>
@@ -949,7 +992,7 @@
 
 
 
-<div><h1 id="connection-properties-documentation">Connection Properties Documentation</h1>
+<div><h1 id="connection-properties-documentation-coming-soon">Connection Properties Documentation (Coming Soon)</h1>
 <h3 id="overview"><strong>Overview</strong></h3>
 <p>Connection properties are used to define the connection settings between the data pipeline and various external systems (e.g., databases, file storage, message queues). These properties allow you to configure how your data pipeline interacts with the source and destination systems, ensuring that it can securely and efficiently read from and write to external resources.</p>
 <h3 id="connection-properties-structure"><strong>Connection Properties Structure</strong></h3>
@@ -965,7 +1008,7 @@
 </thead>
 <tbody>
 <tr>
-<td><code>connection_name</code></td>
+<td><code>name</code></td>
 <td>String</td>
 <td>✅ Yes</td>
 <td>The unique name used to identify the connection configuration.</td>
@@ -1007,16 +1050,22 @@
 <td>Whether to use SSL encryption for the connection (default: <code>false</code>).</td>
 </tr>
 <tr>
-<td><code>connection_timeout</code></td>
+<td><code>ssl_cert</code></td>
+<td>String</td>
+<td>❌ No</td>
+<td>Path to your certificate  (default: <code>false</code>).</td>
+</tr>
+<tr>
+<td><code>timeout</code></td>
 <td>Integer</td>
 <td>❌ No</td>
 <td>The timeout value for establishing a connection (in seconds).</td>
 </tr>
 <tr>
-<td><code>extra_options</code></td>
+<td><code>additional_attributes</code></td>
 <td>Object</td>
 <td>❌ No</td>
-<td>Additional options or parameters specific to the type of connection (e.g., SSL certificates).</td>
+<td>Additional options or parameters specific to the type of connection (e.g., pool_size).</td>
 </tr>
 </tbody>
 </table>
@@ -1024,7 +1073,7 @@
 <h3 id="detailed-explanation-of-parameters"><strong>Detailed Explanation of Parameters</strong></h3>
 <ul>
 <li>
-<p><strong><code>connection_name</code></strong>: This parameter is used to uniquely identify a connection configuration. It allows you to reference the connection easily when defining sources or destinations in the pipeline configuration.</p>
+<p><strong><code>name</code></strong>: This parameter is used to uniquely identify a connection configuration. It allows you to reference the connection easily when defining sources or destinations in the pipeline configuration.</p>
 </li>
 <li>
 <p><strong><code>host</code></strong>: Specifies the host or IP address of the external system to which the pipeline will connect. This could be a database server, cloud storage endpoint, or a message queue system.</p>
@@ -1033,10 +1082,10 @@
 <p><strong><code>port</code></strong>: The port number used by the external system for communication. For example, databases typically use ports like <code>5432</code> for PostgreSQL or <code>3306</code> for MySQL. If no specific port is needed, the default port will be used based on the service type.</p>
 </li>
 <li>
-<p><strong><code>username</code></strong>: The username for authentication to the external system. This credential is used to securely access the database, file system, or other resource. It is important to keep this value secure.</p>
+<p><strong><code>username</code></strong>: The username for authentication to the external system. This credential is used to securely access the database, file system, or other resource. It is important to keep this value secure. It can be accessed from your own secret manager using secrets_properties. </p>
 </li>
 <li>
-<p><strong><code>password</code></strong>: The password corresponding to the username for authentication. It is important to securely store and encrypt this value in configuration files to prevent unauthorized access.</p>
+<p><strong><code>password</code></strong>: The password corresponding to the username for authentication. It is important to securely store and encrypt this value in configuration files to prevent unauthorized access. It can be accessed from your own secret manager using secrets_properties. </p>
 </li>
 <li>
 <p><strong><code>database_name</code></strong>: The name of the database or schema you want to connect to. This parameter is especially important when working with SQL databases or systems that have multiple schemas or databases.</p>
@@ -1045,10 +1094,13 @@
 <p><strong><code>ssl_enabled</code></strong>: A boolean value that specifies whether to use SSL (Secure Sockets Layer) encryption for the connection. This is important for securing data transmission between the pipeline and the external system. If set to <code>true</code>, SSL encryption will be used.</p>
 </li>
 <li>
-<p><strong><code>connection_timeout</code></strong>: Defines the timeout period (in seconds) for establishing the connection. If the connection cannot be established within this time, the attempt will be aborted. This parameter helps manage connection failures gracefully.</p>
+<p><strong><code>ssl_cert</code></strong>: If ssl_enabled is true then retrive the certificate from you certificate manager. It can be accessed from your own secret manager using secrets_properties. </p>
 </li>
 <li>
-<p><strong><code>extra_options</code></strong>: An optional object to provide additional configuration settings specific to the connection. For instance, you might need to provide SSL certificates, connection pooling settings, or other system-specific parameters.</p>
+<p><strong><code>timeout</code></strong>: Defines the timeout period (in seconds) for establishing the connection. If the connection cannot be established within this time, the attempt will be aborted. This parameter helps manage connection failures gracefully.</p>
+</li>
+<li>
+<p><strong><code>additional_attributes</code></strong>: An optional object to provide additional configuration settings specific to the connection. For instance, you might need to provide connection pooling settings, or other system-specific parameters.</p>
 </li>
 </ul>
 <hr>
@@ -1056,16 +1108,25 @@
 <p>Here’s an example of how connection properties might look in a JSON configuration for connecting to a PostgreSQL database:</p>
 <pre><code class="language-json">{
   "connection_properties": {
-    "connection_name": "postgres_connection",
+    "name": "postgres_connection",
     "host": "db.example.com",
     "port": 5432,
-    "username": "user123",
-    "password": "securepassword",
+    "username": {
+      "secert_name": "my_aws", 
+      "secret_value":"postgres-user-name"
+    },
+    "password": {
+      "secert_name": "my_aws", 
+      "secret_value":"postgres-password"
+    },
     "database_name": "data_pipeline_db",
     "ssl_enabled": true,
-    "connection_timeout": 30,
-    "extra_options": {
-      "ssl_cert_path": "/path/to/ssl/certificate",
+    "ssl_cert": {
+          "secert_name": "certs_manager", 
+          "secret_value":"postgres_cert"
+      },
+    "timeout": 30,
+    "additional_attributes": {
       "pool_size": 10
     }
   }

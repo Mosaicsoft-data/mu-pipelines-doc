@@ -20,6 +20,7 @@ nav:
       SQL Transformation: transform-command\transformSQL.md
   - Destination Commands: 
       CSV: destination-command\destinationCSV.md
+      Parquet: destination-command\destinationParquet.md
       Deafult Catalog (Data Lake/Lakehouse): destination-command\destinationDefaultCatalog.md
   - Streaming Commands: 
       Kafka to Iceberg Configuration: streaming-command\stream-kafka-iceberg.md
