@@ -1,4 +1,6 @@
 site_name: "mu-pipelines Docs"
+site_url: "https://mosaicsoft-data.github.io/mu-pipelines-doc/"
+
 theme:
   name: "material"
   custom_dir: docs\overrides
@@ -12,6 +14,20 @@ plugins:
         video_controls: True
         css_style:
         width: "50%"
+    - mkdocstrings
+    - search
+    - ultralytics:
+        verbose: True
+        enabled: True
+        default_image: "https://example.com/default-image.png"
+        default_author: "you@company.com"
+        add_desc: True
+        add_image: True
+        add_keywords: True
+        add_share_buttons: True
+        add_authors: False
+        add_json_ld: False
+        add_css: True
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
