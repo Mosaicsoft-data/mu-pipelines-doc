@@ -1,6 +1,10 @@
 site_name: "mu-pipelines Docs"
 theme:
   name: "material"
+  custom_dir: docs\overrides
+extra:
+  google_site_verification: '-H19MiKa-4NI9aJHAM1bxBBebrS7IrubqX-_lylLcqw'
+
 plugins:
     - mkdocs-video:
         is_video: True
