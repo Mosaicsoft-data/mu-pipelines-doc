@@ -2,78 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://mosaicsoft-data.github.io/mu-pipelines-doc/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-14</lastmod>
     </url>
     <url>
          <loc>https://mosaicsoft-data.github.io/mu-pipelines-doc/connection_properties/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-14</lastmod>
     </url>
     <url>
          <loc>https://mosaicsoft-data.github.io/mu-pipelines-doc/faq/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-14</lastmod>
     </url>
     <url>
          <loc>https://mosaicsoft-data.github.io/mu-pipelines-doc/getting-started/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-14</lastmod>
     </url>
     <url>
          <loc>https://mosaicsoft-data.github.io/mu-pipelines-doc/global_properties/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-14</lastmod>
     </url>
     <url>
          <loc>https://mosaicsoft-data.github.io/mu-pipelines-doc/secrets_properties/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-14</lastmod>
     </url>
     <url>
          <loc>https://mosaicsoft-data.github.io/mu-pipelines-doc/Demo%20Videos/Introduction/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-14</lastmod>
     </url>
     <url>
          <loc>https://mosaicsoft-data.github.io/mu-pipelines-doc/Demo%20Videos/Use%20in%20databricks/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-14</lastmod>
     </url>
     <url>
          <loc>https://mosaicsoft-data.github.io/mu-pipelines-doc/Developer%20Docs/CI-CD/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-14</lastmod>
     </url>
     <url>
          <loc>https://mosaicsoft-data.github.io/mu-pipelines-doc/Developer%20Docs/How%20to%20create%20data%20mesh/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-14</lastmod>
     </url>
     <url>
          <loc>https://mosaicsoft-data.github.io/mu-pipelines-doc/destination-command/destinationCSV/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-14</lastmod>
     </url>
     <url>
          <loc>https://mosaicsoft-data.github.io/mu-pipelines-doc/destination-command/destinationDefaultCatalog/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-14</lastmod>
     </url>
     <url>
          <loc>https://mosaicsoft-data.github.io/mu-pipelines-doc/destination-command/destinationParquet/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-14</lastmod>
     </url>
     <url>
          <loc>https://mosaicsoft-data.github.io/mu-pipelines-doc/ingest-command/ingestCSV/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-14</lastmod>
     </url>
     <url>
          <loc>https://mosaicsoft-data.github.io/mu-pipelines-doc/ingest-command/ingestJDBC/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-14</lastmod>
     </url>
     <url>
          <loc>https://mosaicsoft-data.github.io/mu-pipelines-doc/ingest-command/ingestKafka/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-14</lastmod>
     </url>
     <url>
          <loc>https://mosaicsoft-data.github.io/mu-pipelines-doc/ingest-command/ingestRestAPI/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-14</lastmod>
     </url>
     <url>
          <loc>https://mosaicsoft-data.github.io/mu-pipelines-doc/streaming-command/stream-kafka-iceberg/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-14</lastmod>
     </url>
     <url>
          <loc>https://mosaicsoft-data.github.io/mu-pipelines-doc/transform-command/transformSQL/</loc>
-         <lastmod>2025-03-12</lastmod>
+         <lastmod>2025-03-14</lastmod>
     </url>
 </urlset>
