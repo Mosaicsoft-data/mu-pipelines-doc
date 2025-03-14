@@ -1,9 +1,16 @@
 site_name: "mu-pipelines Docs"
 site_url: "https://mosaicsoft-data.github.io/mu-pipelines-doc/"
-
+title: "mu-pipelines home page"
+description: "You can find all documents and videos on how to use mu-pipelines by mosaicsoft"
 theme:
   name: "material"
   custom_dir: docs\overrides
+  tags:
+    - lakehouse
+    - ETL
+    - data pipelines
+    - open source ETL
+    - data mesh
 extra:
   google_site_verification: '-H19MiKa-4NI9aJHAM1bxBBebrS7IrubqX-_lylLcqw'
 
@@ -15,12 +22,11 @@ plugins:
         css_style:
         width: "50%"
     - mkdocstrings
-    - search
     - ultralytics:
         verbose: True
         enabled: True
         default_image: "https://example.com/default-image.png"
-        default_author: "you@company.com"
+        default_author: "mupipelines@gmail.com"
         add_desc: True
         add_image: True
         add_keywords: True
