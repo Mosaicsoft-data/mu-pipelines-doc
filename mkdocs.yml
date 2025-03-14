@@ -1,10 +1,10 @@
 site_name: "mu-pipelines Docs"
 site_url: "https://mosaicsoft-data.github.io/mu-pipelines-doc/"
-title: "mu-pipelines home page"
-description: "You can find all documents and videos on how to use mu-pipelines by mosaicsoft"
 theme:
   name: "material"
   custom_dir: docs\overrides
+  title: "mu-pipelines home page"
+  description: "You can find all documents and videos on how to use mu-pipelines by mosaicsoft"
   tags:
     - lakehouse
     - ETL
