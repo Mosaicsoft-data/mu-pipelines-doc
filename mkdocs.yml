@@ -13,7 +13,8 @@ theme:
     - data mesh
 extra:
   google_site_verification: '-H19MiKa-4NI9aJHAM1bxBBebrS7IrubqX-_lylLcqw'
-
+  search:
+    indexing: 'full'
 plugins:
     - mkdocs-video:
         is_video: True
